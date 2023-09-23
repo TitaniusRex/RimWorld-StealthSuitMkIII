@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Stealth Suit Mk II</name>
+    <name>Stealth Suit Mk III</name>
     <author>TitaniusRex</author>
     <supportedVersions>
 		<li>1.4</li>
     </supportedVersions>
-	<packageId>TitaniusRex.StealthSuitMkII</packageId>
+	<packageId>TitaniusRex.StealthSuitMkIII</packageId>
     <description>Let your.</description>
 	<modDependencies>
 		<li>
@@ -19,8 +19,8 @@
 	<loadAfter>
 	    <li>Ludeon.RimWorld</li>
 	    <li>Ludeon.RimWorld.Royalty</li>
-		<li>Ludeon.RimWorld.Ideology</li>
-		<li>Ludeon.RimWorld.Biotech</li>
+	    <li>Ludeon.RimWorld.Ideology</li>
+	    <li>Ludeon.RimWorld.Biotech</li>
 	</loadAfter>
 </ModMetaData>
 
