@@ -38,6 +38,11 @@
 		</statBases>
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
+			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</ToxicEnvironmentResistance>
+			<PsychicSensitivity>-0.90</PsychicSensitivity>
+			<EatingSpeed>-0.3</EatingSpeed>
+			<SocialImpact>-0.4</SocialImpact>
+			<ImmunityGainSpeed>1</ImmunityGainSpeed>
 		</equippedStatOffsets>
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
