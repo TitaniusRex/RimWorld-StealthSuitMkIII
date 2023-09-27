@@ -17,9 +17,6 @@
 			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.85</drawSize>
 		</graphicData>
-		<stuffCategories>
-			<li>Leathery</li>
-		</stuffCategories>
 		<thingCategories>
 			<li>ApparelArmor</li>
 		</thingCategories>
@@ -58,7 +55,7 @@
 			<layers>
 				<li>Overhead</li>
 				<li>Shell</li>
-				<!--<li>Middle</li>-->
+				<li>Middle</li>
 			</layers>
 			<tags>
 				<li>IndustrialMilitaryBasic</li>
@@ -77,7 +74,6 @@
 		<costList>
 			<Steel>20</Steel>
 		</costList>
-		<costStuffCount>80</costStuffCount>
 		<comps>
 			<li Class="CompProperties_Reloadable">
 				<maxCharges>5</maxCharges>
