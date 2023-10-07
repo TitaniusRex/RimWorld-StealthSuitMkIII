@@ -49,7 +49,7 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
-			     <li>Legs</li>
+			      <li>Legs</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
 			<layers>
