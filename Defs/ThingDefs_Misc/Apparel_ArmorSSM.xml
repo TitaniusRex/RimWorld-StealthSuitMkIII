@@ -7,7 +7,7 @@
 		<label>Stealth suit Mk III</label>
 		<description>Simple attire. Consists of a mixture of leather and metal.</description>
 		<possessionCount>1</possessionCount>
-		<recipeMaker> 
+		<recipeMaker>  
 			<researchPrerequisite>PoweredArmor</researchPrerequisite>
 			<displayPriority>210</displayPriority>
 		</recipeMaker>
