@@ -66,11 +66,11 @@
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-		</apparel>
-		<tradeTags>
+		 </apparel>
+		 <tradeTags>
 			<li>HiTechArmor</li>
 			<li>Armor</li>
-		</tradeTags>
+		 </tradeTags>
 
 	</ThingDef>
 
