@@ -4,7 +4,7 @@
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>SSMkIII_StealthSuitMkIII</defName>
 		<label>Stealth suit Mk III</label>
-		<description>Simple attire. Consists of a mixture of leather and metal.</description>
+		<description>S</description>
 		<possessionCount>1</possessionCount>
 		<recipeMaker>  
 			<researchPrerequisite>PoweredArmor</researchPrerequisite>
