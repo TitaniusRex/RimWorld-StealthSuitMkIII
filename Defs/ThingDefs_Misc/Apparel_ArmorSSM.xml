@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	
 	<ThingDef ParentName="ApparelMakeableBase">
 		<defName>SSMkIII_StealthSuitMkIII</defName>
 		<label>Stealth suit Mk III</label>
