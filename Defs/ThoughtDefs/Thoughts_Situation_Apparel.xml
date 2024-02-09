@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<ThoughtDef>
+		<defName>SSMkIII_StealthSuitMkIII</defName>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>SSMkIII.ThoughtWorker_StealthSuitMkIII</workerClass>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Armor</label>
+				<description></description>
+				<baseMoodEffect>20</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	
+
+</Defs>
