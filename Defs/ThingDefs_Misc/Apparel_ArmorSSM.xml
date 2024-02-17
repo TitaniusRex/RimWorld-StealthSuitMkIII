@@ -1,75 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-	<ThingDef ParentName="ApparelMakeableBase">
+	<ThingDef  ParentName="ArmorMachineableBase">
 		<defName>SSMkIII_StealthSuitMkIII</defName>
 		<label>Stealth suit Mk III</label>
-		<description>Stealth suit, but doesn't work!</description>
+		<description>Full invisibility armor. Developed in ▇▇▇▇, by scientist ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ ▇▇▇▇▇. Effective only for melee warriors, since the invisibility field is destroyed when using a long-shot weapon, disabling the invisibility equipment and rendering the suit unusable. It is also worth noting that damage by an electromagnetic pulse leads to an explosion. By wearing a suit, characters gain satisfaction in communicating with AI, but thereby lose not only in work efficiency but also in gaining skills.</description>
 		<possessionCount>1</possessionCount>
-		<recipeMaker>  
-			<researchPrerequisite>PoweredArmor</researchPrerequisite>
+		<pathCost>0</pathCost>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>ReconArmor</researchPrerequisite>
 			<displayPriority>210</displayPriority>
+			<skillRequirements>
+				<Crafting>11</Crafting>
+			</skillRequirements>
+			<useIngredientsForColor>false</useIngredientsForColor>
 		</recipeMaker>
 		<graphicData>
-			<texPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</texPath>
+			<texPath>Things/Pawn/Humanlike/Apparel/SSMIII/SSMIII</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
 			<drawSize>0.85</drawSize>
 		</graphicData>
-		<thingCategories>
-			<li>ApparelArmor</li>
-		</thingCategories>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>20</weight>
+					<only>(0.3,0.3,0.3,1)</only>
+				</li>
+				<li>
+					<weight>20</weight>
+					<min>(0.1,0.1,0.1,1)</min>
+					<max>(0.9,0.9,0.9,1)</max>
+				</li>
+			</options>
+		</colorGenerator>
 		<statBases>
-			<MaxHitPoints>500</MaxHitPoints>
-			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<WorkToMake>88888</WorkToMake>
 			<Mass>6</Mass>
 			<StuffEffectMultiplierArmor>0.80</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.80</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.30</StuffEffectMultiplierInsulation_Heat>
+			<Insulation_Cold>18</Insulation_Cold>
+			<Insulation_Heat>-2</Insulation_Heat>
 			<Flammability>0.6</Flammability>
-			<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.26</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.27</ArmorRating_Heat>
-			<EquipDelay>25</EquipDelay>
+			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.16</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.17</ArmorRating_Heat>
+			<EquipDelay>65</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-1</SlaveSuppressionOffset>
 			<ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.6</ToxicEnvironmentResistance>
-			<PsychicSensitivity>-0.90</PsychicSensitivity>
-			<EatingSpeed>-0.3</EatingSpeed>
-			<SocialImpact>-0.4</SocialImpact>
+			<PsychicSensitivity>-1</PsychicSensitivity>
+			<EatingSpeed>-0.6</EatingSpeed>
+			<SocialImpact>-0.95</SocialImpact>
 			<ImmunityGainSpeed>1</ImmunityGainSpeed>
+			<WorkSpeedGlobal>-0.6</WorkSpeedGlobal>
+			<ResearchSpeedFactor>-0.6</ResearchSpeedFactor>
+			<GlobalLearningFactor>-0.4</GlobalLearningFactor>
+			<MoveSpeed>-0.12</MoveSpeed>
+			<FoodPoisonChance>-0.3</FoodPoisonChance>
+			<TrainAnimalChance>-1</TrainAnimalChance>
+			<TameAnimalChance>-1</TameAnimalChance>
+			<TrapSpringChance>0.3</TrapSpringChance>
+			<SurgerySuccessChanceFactor>-1</SurgerySuccessChanceFactor>
+			<InjuryHealingFactor>1</InjuryHealingFactor>
 		</equippedStatOffsets>
+		
+		<comps>
+			<li Class="SSMkIII.CompProperties_BlocksRangedWeapons"/>
+			<li Class="CompProperties_Biocodable"/>
+			<li Class="SSMkIII.CompProperties_HediffApparel">
+				<hediffDef>Invisibility_Apparel</hediffDef>
+				<partsToAffect>
+					<li>Torso</li>
+				</partsToAffect>
+			</li>
+		</comps>
+		
 		<apparel>
-			<useWornGraphicMask>true</useWornGraphicMask>
 			<bodyPartGroups>
 				<li>FullHead</li>
 				<li>Torso</li>
 				<li>Neck</li>
 				<li>Shoulders</li>
 				<li>Arms</li>
-			        <li>Legs</li>
+			    <li>Legs</li>
 			</bodyPartGroups>
-			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/PowerArmor/PowerArmor</wornGraphicPath>
+			<wornGraphicPath>Things/Pawn/Humanlike/Apparel/SSMIII/SSMIII</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>
 				<li>Shell</li>
 				<li>Middle</li>
 			</layers>
 			<tags>
-				<li>IndustrialMilitaryBasic</li>
-				<li>IndustrialMilitaryAdvanced</li>
 				<li>SpacerMilitary</li>
 			</tags>
 			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-		 </apparel>
-		 <tradeTags>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+		</apparel>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<tradeability>Sellable</tradeability>
+		<tradeTags Inherit="False">
 			<li>HiTechArmor</li>
 			<li>Armor</li>
-		 </tradeTags>
+		</tradeTags>
+		<costList>
+			<Cloth>60</Cloth>
+			<Plasteel>30</Plasteel>
+			<ComponentIndustrial>14</ComponentIndustrial>
+		</costList>
+		<costStuffCount>-5</costStuffCount>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		
 	</ThingDef>
 
 
